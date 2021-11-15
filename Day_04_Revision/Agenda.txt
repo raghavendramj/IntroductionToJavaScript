@@ -1,0 +1,52 @@
+try 
+catch
+---------> very less used concept
+
+1. Closure
+2. Hoisting
+3. Methods of Arrays -> splice, slice, and other methods
+4. Method of Strings
+5. Scope -> Local scope, global scope, function scope
+6. this keyword
+7. Object creation -> 
+	3 ways -> 
+		using factory function
+		using constructor function
+		using literals
+
+	
+	substring -> (start, end);
+	substr ->      (start, how many chars to extract);
+	
+	slice()
+		-> extracts part of a string and returns the extracted parts in a new string
+	substr()
+		-> extracts part of a string, 1st -> start 2nd -> specified number of chars
+	substring()
+		->extracts part of a string, start to end 
+	
+	
+	PUSH -> Add an element at the end
+	POP -> Remove an element at the end
+		
+	UNSHIFT -> Add an element from the beginning
+	SHIFT -> Remove an element from the beginning
+	
+	Ways to create objects:
+	using litreals
+	using factory function
+	using constructor function
+		// 1. new operator -> create a empty object -> {} => that
+		// 2. it will set 'this' to that object
+		// 3. It returns the object from that function -> this happens automatically
+	
+	
+	
+	Questions:
+		index swap can be done in substring  i.e (5,1) treated as (1,5) but not in slice ..may be 
+		substring also does same, no difference then?
+	
+	
+	
+	
+	

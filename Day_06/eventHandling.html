@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Event Handling</title>
+    <script>
+      function clickEventTriggered(event) {
+        alert("Hey Buddy, How are you?");
+        console.log("Click Event :", event.currentTarget);
+      }
+      function contentChanged(event) {
+        event.preventDefault();
+        console.log("Content Changed :- ", event.currentTarget.value);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="alert('Hey i m inline');">INLINE CLICK Event</button>
+    <br />
+    <br />
+    <button onclick="clickEventTriggered(event)">Click Event</button>
+    <br />
+    <br />
+    <label> Please Enter some text : </label>
+    <input type="text" value="Test" onchange="contentChanged(event)" />
+    <br />
+    <br />
+    <div id="myDiv">This is my DIV Content</div>
+    <br />
+    <br />
+    <button id="dummyBtn">Dummy Button</button>
+    <script>
+      function triggerWhenMouseHovered(event) {
+        console.log("Mouse Hovered!");
+      }
+      var divElement = document.getElementById("myDiv");
+
+      divElement.addEventListener("mouseover", triggerWhenMouseHovered());
+
+      function btnHandler() {
+        console.log("Dummy button clicked");
+      }
+      var btnElement = document.getElementById("dummyBtn");
+
+      btnElement.addEventListener("click", btnHandler);
+    </script>
+  </body>
+</html>

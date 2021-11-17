@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>DOM Manipluation</title> 
+    <script>
+        function addElement(){
+            var paragraph = document.createElement('p');
+            paragraph.setAttribute('id', 'myParagraph');
+            paragraph.innerText = 'This is the child paragraph';
+
+            var parentDiv = document.getElementById('myDiv');
+            parentDiv.appendChild(paragraph);
+        }
+        
+        function removeElement(){
+            var paragraph = document.getElementById('myParagraph');
+            var parentDiv = document.getElementById('myDiv');
+
+            parentDiv.removeChild(paragraph);
+        }
+    </script>
+  </head>
+  <body>
+    <div id="myDiv">Welcome to DOM Manipluation class!</div> 
+  </body>
+</html>

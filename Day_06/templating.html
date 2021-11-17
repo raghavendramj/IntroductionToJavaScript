@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Templating...</title>
+  </head>
+  <body>
+    <div id="conatiner"></div>
+    <script>
+      var containerDiv = document.getElementById("conatiner");
+
+      var templateElements = `This is the Container
+      <div class="header">
+        <h4> My Website - upGrad </h4>
+        <p> Welcome to my website! </p>
+      </div>`;
+
+      containerDiv.innerHTML = templateElements;
+    </script>
+  </body>
+</html>

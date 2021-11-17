@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Web Storage - session Storage</title>
+  </head>
+  <body>
+    <div id="conatiner"></div>
+    <script>
+      //Store.
+      sessionStorage.setItem("name", "Raghavendra M J");
+
+      var divElement = document.getElementById("conatiner");
+      //Retreive.
+      divElement.innerHTML = sessionStorage.getItem("name");
+    </script>
+  </body>
+</html>

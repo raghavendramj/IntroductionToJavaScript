@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Event Handling - preventDefault</title>
+    <script>
+      function contentChanged(event) {
+        event.preventDefault();
+        console.log("Content Changed :- ", event.currentTarget.value);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" value="Test" onchange="contentChanged(event)" />
+  </body>
+</html>

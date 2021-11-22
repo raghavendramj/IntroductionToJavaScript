@@ -1,0 +1,26 @@
+Question:
+	
+how to read input line in javascript
+
+
+JavaScript (JS) is, by default, synchronous in nature. 
+It is a single-threaded programming language, which means that only one thing can happen at a time.
+
+Synchronous JavaScript
+
+Task:
+	Suppose you are requesting data from a server. 
+
+Steps:	
+	JS code
+		| 
+			-> request -> backend server ------------| Reaches an API
+			<- response <- processing of the response building(DB operations in action)	
+		| 	
+Points to consider for Synchronous JS
+	Depending on the network speed and the size of the request, 
+		it will take some time to process the request and then send across the response.
+		In such a case, the JS execution will be stopped until the request is resolved.
+		
+		
+		

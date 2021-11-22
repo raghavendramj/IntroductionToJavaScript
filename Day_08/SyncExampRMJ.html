@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Simple synchronous JavaScript example</title>
+  </head>
+  <body>
+    <button id="btn">Click me</button>
+    <script>
+      //Event Listner
+      function calculateTimeAndDate() {
+        //Introduce a lag,
+        let currentDate;
+        for(let i=0; i<10000000; i++){
+            let date = new Date();
+            currentDate = date;
+        }
+        console.log("Time calculation done : ", currentDate);
+
+        //Attach a child to the body
+        let paraElement = document.createElement("p");
+        paraElement.textContent = "This is my paragraph!";
+        document.body.appendChild(paraElement);
+      }
+      //HTML Buttom Element
+      let btnObj = document.getElementById("btn");
+
+      //Binding the event listner to html element<Button>
+      btnObj.addEventListener("click", calculateTimeAndDate);
+    </script>
+  </body>
+</html>

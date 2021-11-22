@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>DOM Manipulation!</title>
+  </head>
+  <body>
+    <p>Please rate the service:</p>
+    <p>
+      <input type="radio" name="rate" value="Very poor" /> Very poor
+      <input type="radio" name="rate" value="Poor" /> Poor
+      <input type="radio" name="rate" value="OK" /> OK
+      <input type="radio" name="rate" value="Good" /> Good
+      <input type="radio" name="rate" value="Very Good" /> Very Good
+    </p>
+
+    <p>
+      <button id="btnRate">Submit</button>
+    </p>
+
+    <script>
+      //Submit Button
+      let btn = document.getElementById("btnRate");
+
+      //Callback Function -> for submit 
+      let submitForm = () => {
+        let rates = document.getElementsByName("rate");
+
+        rates.forEach((rate) => {
+          if (rate.checked) {
+            console.log(
+              `Thanks for your valuable feedback !, you have rated us : ${rate.value}`
+            );
+          }
+        });
+      };
+
+      //Binding the btn with submitForm callback function
+      btn.addEventListener("click", submitForm);
+    </script>
+  </body>
+</html>

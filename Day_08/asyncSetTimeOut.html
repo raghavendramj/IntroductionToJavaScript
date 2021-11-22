@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async JavaScript - SetTimeOut</title>
+  </head>
+  <body>
+    <p id="text-01"></p>
+    <p id="text-02"></p>
+
+    <script>
+      //Line - 01
+      console.log("-------------> setTimeOut Example! <--------------");
+      
+      //Line - 02 -> Async function -> Leave main thread
+      setTimeout(() => {
+        document.getElementById("text-01").innerHTML =
+          "This is the first paragraph (Inside TimeOut method!)";
+      }, 2000);
+
+      //Line - 03
+      document.getElementById("text-02").innerHTML = "This is the second paragraph at the END!";
+    </script>
+  </body>
+</html>

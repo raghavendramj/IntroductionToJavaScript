@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment</title>
+
+        <!-- Import CSS -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/payment.css">   
+    </head>
+    <body>
+        <div class="main-container">
+             <!-- Added the header elements: Logo and Login Button -->
+             <header class="header-footer" id="header">     
+                
+            </header>
+            <!-- Added the main body elements: Hotel Details(wih image of hotel), Customer Details and Payment Details -->
+            <div id="payment-container">
+                <div id="hotel-details">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="hotel-image"> 
+                    <div class="hotel-name-rating">
+                        <h2>Radisson Blu Hotel</h2>
+                        <p>#38 of 1,289 hotels in New Delhi</p>
+                        <p>National Highway 8, New Delhi 110017 India</p>
+                    </div>
+                </div>
+                <div id="customer-payment-details">
+                    <div id="customer-details">
+                        <p><strong class="heading">Name:</strong>&nbsp;John Doe</p> 
+                        <p><strong class="heading">Number of Adults:</strong>&nbsp;2</p>
+                        <p><strong class="heading">Check-in Date:</strong>&nbsp;04/06/2020</p>
+                        <p><strong class="heading">Check-out Date:</strong>&nbsp;06/06/2020</p>
+                    </div>
+                    <div id="payment-details">
+                        <p><strong class="heading">Tariff Breakdown:</strong>&nbsp;Rs.1000 x 2 Adults x 5 Nights</p>
+                        <p><strong class="heading">Total Amount:</strong>&nbsp;Rs.10000</p>
+                    </div>
+                    <a href="#" id="pay-now">
+                        <button type="button" class="btn btn-success" id="payNowBtn" disabled>Pay Now</button>
+                    </a>
+                </div>
+            </div>
+            <!-- Added the footer elements: Contact Us Button, Social Media Links -->
+            <footer class="header-footer" id="footer">
+
+            </footer>
+        </div>
+        <script src="scripts/common.js"></script>
+        <script src="scripts/payment.js"></script>
+    </body>
+</html>

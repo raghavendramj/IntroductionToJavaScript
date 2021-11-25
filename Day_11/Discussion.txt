@@ -1,0 +1,37 @@
+Encoding
+	Raghav
+		apply encoding -> UmFnaGF2
+
+Decoding
+	UmFnaGF2 -> apply decoding -> Raghav
+
+Hands On:
+-----------
+
+1. Make Ajax call to this URL :
+	https://www.themealdb.com/api/json/v1/1/search.php?s
+2. Once you receive the response, create a array of mealList or mealInfo
+3. create the element and attach to the
+	ul
+		-> li
+4. Implement the filter functionality using ES6,
+
+------------------------------------------------------------------------------------------------
+document.getElementById("dishList") => UL
+
+1. Fetch all the dishesArrayList =>
+	fetchDishes =>
+		createMealListAndAttachToUL(dishesObjectList)
+			replace the innerHTML  of UL liStringObjectList <- dishesArrayList
+
+
+2. Append it to UL
+	document.getElementById("searchbar")
+	onkeyup ->
+		EventListner => dishesArrayList => filtered it to match 'Tur' => filter the list filteredObjectList
+			replace the innerHTML  of UL liStringObjectList <- filteredObjectList
+			
+------------------------------------------------------------------------------------------------
+
+
+
